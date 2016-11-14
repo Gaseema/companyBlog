@@ -1,0 +1,356 @@
+body {
+    background-color: #dcdcdc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+span {
+    color: black;
+}
+
+/**********************************************
+                NAVIGATION
+**********************************************/
+
+a {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.nav {
+    min-height: 60px;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 20px;
+    transition: 0.5s;
+}
+.nav .left {
+    float: left;
+    margin-left: 1em;
+}
+.nav .left li {
+    font-size: 14px;
+    float: left;
+    margin-left: 40px
+}
+.nav .left li a {
+    display: block;
+    padding: 15px 15px;
+    line-height: 30px;
+    transition: 0.5s;
+}
+.nav .left li a:hover {
+    background: #f2f2f2;
+}
+.nav .left li a:hover {
+    color: #FED130;
+}
+.nav .right {
+    float: right;
+    margin-right: 1em;
+    margin-right: 50px
+}
+.nav .right li {
+    font-size: 14px;
+    float: left;
+    font-family: 'Lato', sans-serif;
+    padding-right: 20px
+}
+.nav .right li a {
+    display: block;
+    padding: 15px 15px;
+    line-height: 30px;
+    transition: 0.5s;
+}
+.nav .right li a:hover {
+    background: #f2f2f2;
+}
+.nav .right li a:hover {
+    color: #FED130;
+}
+.toggle-nav {
+    display: none;
+}
+.nav-mobile style {
+    display: block;
+}
+@media only screen and (max-width: 640px) {
+    .toggle-nav {
+        display: block;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        line-height: 30px;
+    }
+    .toggle-nav:after {
+        content: ' Menu';
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .style-mobile {
+        background: #ffffff;
+        top: 51px;
+        position: absolute;
+        width: 100%;
+    }
+    .style-mobile li {
+        display: block;
+        width: 100%;
+    }
+    .nav .right {
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+    .nav .left {
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+}
+@media only screen and (min-width: 641px) {
+    .nav-mobile {
+        display: block !important;
+    }
+}
+
+/**********************************************
+                HERO
+**********************************************/
+
+.hero {}
+.heroBanner {
+    background-image: url(../img/blog1.jpeg);
+    height: 350px;
+    color: white;
+    background-size: cover;
+    min-width: 100%;
+}
+.heroBanner h5 {
+    margin-top: 130px;
+    font-size: 3em;
+    margin-left: 70px;
+    border-left: solid #FFA905 30px;
+    padding-left: 20px
+}
+#social {
+    background-color: black;
+    color: white;
+    border-left: solid #FED130 10px;
+    padding: 6px;
+    padding-left: 15px;
+}
+#facebook {
+    background-color: #1C3E67;
+}
+#facebook li {
+    display: inline-block;
+}
+#twitter {
+    background-color: #28A6C5;
+}
+#twitter li {
+    display: inline-block;
+}
+#youtube {
+    background-color: #D2002C;
+}
+#youtube li {
+    display: inline-block;
+}
+.subscription {
+    margin-top: 15px;
+    color: white;
+}
+.subscription ul {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.subscription p {
+    color: white;
+}
+.subscription span {
+    font-weight: bold
+}
+.subscription .fa {
+    font-size: 1.5em
+}
+.lastChild {
+    float: right;
+    margin-right: 10px;
+}
+.bdrRight {
+    border-right: solid white 1px;
+    padding-right: 5px
+}
+.subscribe {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 15px
+}
+.subscribe h6 {
+    padding-top: 20px
+}
+.subscribe .button {
+    background-color: #FED130;
+    color: black;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.subscribe p {
+    padding-bottom: 20px;
+}
+#pPad {
+    padding-top: 20px;
+}
+
+/*****************/
+
+#sidebar {
+    display: block;
+}
+
+/** tabber widget **/
+
+#tabbed-posts {
+    display: block;
+    margin: 0 auto;
+}
+#tabbed-posts .navlinks {
+    display: block;
+    font-size: 1.4em;
+    text-align: center;
+    background-color: #171717;
+}
+#tabbed-posts .navlinks a {
+    text-decoration: none;
+    font-weight: normal;
+    margin-right: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding-right: 10px;
+    transition: 0.5s;
+    padding: 4px;
+}
+#tabbed-posts .navlinks a:hover,
+#tabbed-posts .navlinks a.active:hover {
+    color: #FED130;
+}
+#tabbed-posts .navlinks a.active {
+    color: #FED130;
+}
+.tabcontent ul {
+    margin-left: 0px;
+}
+.tabcontent ul li {
+    padding-bottom: 5px;
+    padding-top: 7px;
+    border-bottom: 1px solid #cbcbcb;
+}
+.tabcontent ul li h3 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+.tabcontent ul li h3 a {
+    display: block;
+    width: 100%;
+    color: #6a6e7a;
+    padding: 3px 0;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+}
+.tabcontent ul li h3 a:hover {
+    background: #dde8f4;
+}
+.tabcontent ul li h3 .featuredpic {
+    display: block;
+    float: left;
+    margin: 0;
+    margin-right: 3px;
+    padding: 3px 4px;
+}
+.tabcontent ul li h3 .featuredpic img {
+    display: block;
+    height: 80px
+}
+.hideme {
+    display: none;
+}
+
+/* clearfix */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
+
+/**********************************************
+                FOOTER
+**********************************************/
+
+.footer {
+    background-color: #171717;
+    min-width: 100%;
+    color: white;
+    margin-top: 70px;
+}
+.footer h6 {
+    margin-top: 30px;
+    border-left: solid #FED130 10px;
+    padding-left: 10px;
+    font-size: 0.95em;
+    font-family: 'Lato', sans-serif;
+}
+.footer img {
+    height: 70px
+}
+.footer .postFontWeight {
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 5px
+}
+.footer p {
+    line-height: 1;
+    font-size: 0.9em;
+    color: #9c9c9c
+}
+.footer li {
+    display: inline-block;
+    background-color: #222222;
+    padding: 3px 3px 3px 3px;
+    margin: 2px 2px 2px 0px;
+    font-size: 0.9em
+}
+.footer .footerPad {
+    margin-bottom: 10px
+}
